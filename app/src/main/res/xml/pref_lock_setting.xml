@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_title">
+        <SwitchPreference
+            android:icon="@drawable/ic_app"
+            android:key="@string/key_turn_on"
+            android:summary="@string/summary_turn_on"
+            android:title="@string/title_turn_on" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_tunroff_lock_security">
+        <Preference
+            android:key="@string/key_turn_off"
+            android:summary="@string/key_summary_turn_off"
+            android:title="@string/key_turn_off_lock_security" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_pass">
+        <Preference
+            android:key="@string/key_using_pass"
+            android:summary="@string/key_summary_using_pass"
+            android:title="@string/key_using_pass_security" />
+    </PreferenceCategory>
+</PreferenceScreen>

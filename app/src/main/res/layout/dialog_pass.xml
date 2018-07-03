@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <TextView
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:text="@string/passTitle"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <com.nirigo.mobile.view.passcode.PasscodeIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:indicator_animation="@anim/abc_popup_enter"
+            app:indicator_background="@drawable/shape_bg_indicator_default"
+            app:indicator_background_active="@drawable/shape_bg_indicator_active"
+            app:indicator_length="4"
+            app:indicator_level="0"
+            app:indicator_margin="@dimen/abc_action_bar_content_inset_material"
+            app:indicator_size="@dimen/abc_action_bar_overflow_padding_end_material" />
+        <com.nirigo.mobile.view.passcode.PasscodeView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:id="@+id/passcode_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

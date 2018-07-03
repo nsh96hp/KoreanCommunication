@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ScrollView
+                android:paddingBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/search_results_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
+                            android:clipToPadding="false"
+                            />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/main_fav"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_favorite" />
+
+                        <ImageButton
+                            android:id="@+id/main_General_Conversation"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_popular_communication" />
+
+                        <ImageButton
+                            android:id="@+id/main_Greetings"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_greeting" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Favorites" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/General_Conversation" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/Greetings" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/main_Numbers"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/cubes" />
+
+                        <ImageButton
+                            android:id="@+id/main_datetime"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/calendar" />
+
+                        <ImageButton
+                            android:id="@+id/main_Directions_Places"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/map" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Numbers" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/Time_and_Date" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/Directions_Places" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/main_Transportation"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="@color/bgMain"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/car" />
+
+                    <ImageButton
+                        android:id="@+id/main_Accommodation"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="@color/bgMain"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hotel" />
+
+                    <ImageButton
+                        android:id="@+id/main_Eating_Out"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_margin="12dp"
+                        android:layout_weight="1"
+                        android:background="@color/bgMain"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cutlery" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Transportation" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/Accommodation" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:gravity="center"
+                            android:text="@string/Eating_Out" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/main_Shopping"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/shoping" />
+
+                        <ImageButton
+                            android:id="@+id/main_Colours"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/paint" />
+
+                        <ImageButton
+                            android:id="@+id/main_Cities_Provinces"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/cityscape" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Shopping" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Colours" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Cities_and_Provinces" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/main_Countries"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/world_map" />
+
+                        <ImageButton
+                            android:id="@+id/main_Tourist_Attractions"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/brochure" />
+
+                        <ImageButton
+                            android:id="@+id/main_Family"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/family" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Countries" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Tourist_Attractions" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Family" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/main_Dating"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/wedding" />
+
+                        <ImageButton
+                            android:id="@+id/main_Emergency"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/alarm" />
+
+                        <ImageButton
+                            android:id="@+id/main_Feeling_Sick"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgMain"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/doctor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Dating" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Emergency" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/Feeling_Sick" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

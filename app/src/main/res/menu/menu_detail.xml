@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_voice_detail"
+        android:icon="@drawable/ic_vol_dialog"
+        android:orderInCategory="1"
+        android:title="@string/voice"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_test"
+        android:icon="@drawable/ic_test"
+        android:orderInCategory="1"
+        android:title="@string/test"
+        app:showAsAction="always" />
+
+</menu>

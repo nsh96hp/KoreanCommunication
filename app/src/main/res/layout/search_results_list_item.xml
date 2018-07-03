@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:background="#fff"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txtItem"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="txtName" />
+            <ImageButton
+                android:id="@+id/fav_item_s"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:src="@drawable/ic_favorite_s"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:id="@+id/unfav_item_s"
+                android:layout_gravity="center"
+                android:background="#fff"
+                android:src="@drawable/ic_unfavorite_s"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/bgItemS"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_kr"
+                    android:text="textKr"
+                    android:textColor="@color/txtItem"
+                    android:paddingLeft="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/txt_pinyin"
+                    android:text="pinyin"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/bgItemS"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/sound_item_search"
+                    android:layout_gravity="center"
+                    android:background="@color/bgItemS"
+                    android:src="@drawable/ic_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/bgItemS"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/sound_item_speaker"
+                    android:layout_gravity="center"
+                    android:background="@color/bgItemS"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

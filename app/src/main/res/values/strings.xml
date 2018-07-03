@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">KoreanCommunication</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="hdp">HDP Solution</string>
+    <string name="about_content">HDP Solution is a professional IT solutions provider, specializing in developing mobile applications. We are constantly striving to develop creativity with the desire to deliver great, comprehensive applications that enable us to create a diverse ecosystem of applications that meet all your needs.</string>
+    <string name="address">5th floor of B5 / D6 building Cau Giay-Dich Vong-Cau Giay-Hanoi</string>
+    <string name="phone">+84 966 577 294</string>
+    <string name="mail">support@hdpsolutions.com</string>
+
+
+    <string name="utility">Utility</string>
+    <string name="communicate">Communicate</string>
+
+    <string name="translate">Translate</string>
+    <string name="study_screen_lock">Study on screen lock</string>
+    <string name="change_language">Change language</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate</string>
+
+    <string name="favorite">Favorite</string>
+    <string name="greet">Greeting</string>
+    <string name="popular">Popular communication</string>
+
+    <string name="voice">Voice</string>
+
+    <string name="waitsearching">Wait for results...</string>
+
+    <string name="Favorites">Favorites</string>
+    <string name="Greetings">Greetings</string>
+    <string name="General_Conversation">General Conversation</string>
+    <string name="Numbers">Numbers</string>
+    <string name="Time_and_Date">Time and Date</string>
+    <string name="Directions_Places">Directions and Places</string>
+    <string name="Transportation">Transportation</string>
+    <string name="Accommodation">Accommodation</string>
+    <string name="Eating_Out">Eating Out</string>
+    <string name="Shopping">Shopping</string>
+    <string name="Colours">Colours</string>
+    <string name="Cities_and_Provinces">Cities and Provinces</string>
+    <string name="Countries">Countries</string>
+    <string name="Tourist_Attractions">Tourist Attractions</string>
+    <string name="Family">Family</string>
+    <string name="Dating">Dating</string>
+    <string name="Emergency">Emergency</string>
+    <string name="Feeling_Sick">Feeling Sick</string>
+    <string name="Language">Language</string>
+    <string name="Rate">Rate</string>
+    <string name="Feedback">Feedback</string>
+    <string name="More_Apps">Dating</string>
+    <string name="About">Dating</string>
+
+    <string name="Splash">Fastest way to learn korean.</string>
+
+    <string name="pref_title">Open Lock</string>
+    <string name="pref_pass">Using password</string>
+    <string name="key_turn_on">key_turrn_on</string>
+    <string name="key_using_pass">key_using_pass</string>
+    <string name="title_turn_on">Turn on Lock screen</string>
+    <string name="key_summary_using_pass">Using pass word to lock screen</string>
+    <string name="summary_turn_on">Summary turn on</string>
+    <string name="pref_tunroff_lock_security">Turn off lock screen</string>
+    <string name="key_turn_off_lock_security">Turn off lock of device</string>
+    <string name="key_using_pass_security">Using password</string>
+    <string name="key_turn_off">key_turn_off</string>
+    <string name="key_summary_turn_off">Turn off defaut lock screen</string>
+    <string name="passTitle">Enter a passcode of 4 digits</string>
+    <string name="faild">Password faild! Please try again!</string>
+    <string name="test">Test</string>
+    <string name="locktitle">Lock screen settings</string>
+    <string name="passLock">Password lock screen</string>
+
+    <string name="inputpass1">Enter the password</string>
+    <string name="inputpass2">Re Enter the password</string>
+
+    <string name="pincode">Enter the pincode</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="inputpass_new">Enter the new password</string>
+    <string name="inputpass_renew">Re Enter the new password</string>
+
+    <string name="inputpin_new">Enter the new pincode</string>
+    <string name="inputpin_renew">Re Enter the new pincode</string>
+
+
+    <string name="inputpass_current1">Enter the current password</string>
+    <string name="inputpass_pin">Enter the Pincode</string>
+    <string name="inputpass_c_pin">Enter the current Pincode</string>
+    <string name="changepass_cur">Change pass with current pass</string>
+
+
+
+    <string name="changepass_pin">Change pass with pincode</string>
+    <string name="change_pin">Change pincode</string>
+
+    <string name="change_done">Change done!</string>
+    <string name="dont_use_pass">Remove password!</string>
+
+    <string name="exit">Exit</string>
+
+
+
+</resources>

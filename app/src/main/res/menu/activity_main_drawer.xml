@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    </group>
+    <item android:title="@string/utility">
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_language"
+            android:title="@string/change_language" />
+
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@drawable/ic_translate"
+            android:title="@string/translate" />
+        <item
+            android:id="@+id/nav_screen_lock"
+            android:icon="@drawable/ic_study_screen_lock"
+            android:title="@string/study_screen_lock" />
+    </item>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate"
+                android:title="@string/rate" />
+        </menu>
+    </item>
+
+</menu>
